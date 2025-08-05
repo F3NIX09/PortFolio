@@ -45,6 +45,10 @@ header img {
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
     transition: transform 0.3s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza itens no eixo horizontal */
 }
 
 .card:hover {
@@ -53,6 +57,8 @@ header img {
 
 .card-title {
     color: var(--cor-destaque);
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .btn-link {
@@ -68,11 +74,34 @@ header img {
     border-radius: 8px;
 }
 
+.btn-ver-projetos {
+    display: block;
+    margin: 20px auto 0 auto; /* centraliza horizontalmente */
+    background-color: var(--cor-destaque);
+    color: var(--cor-clara);
+    font-weight: 700;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    width: max-content;
+}
+
+.btn-ver-projetos:hover {
+    background-color: #a523c9; /* tom mais escuro do cor-destaque */
+    color: white;
+}
+
 footer {
     background-color: #1A1C21;
     color: var(--cor-principal);
     text-align: center;
     border-top: 2px solid var(--cor-secundaria);
+    padding: 15px 10px;
 }
 
 footer a {
@@ -99,8 +128,4 @@ footer a:hover {
 
 .modal-footer a:hover {
     color: white;
-}
-
-main {
-    margin-bottom: 80px;
 }
